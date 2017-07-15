@@ -1,12 +1,16 @@
 'use strict';
 
 class RandomHelper {
-  createNumberRandom(amount, maximumNumber = 0) {
+  createNumberRandom(amount, maximumNumber = 1) {
     const numbers = [];
     const minimumNumber = 1;
 
-    for (let i = 0; i < amount; i++) {
-      numbers.push(this._getRandomInt(minimumNumber, maximumNumber));
+    while (numbers.length < amount) {
+      const number = this._getRandomInt(minimumNumber, maximumNumber);
+
+      if (!numbers.includes(number)) {
+        numbers.push(number);
+      }
     }
 
     return numbers;

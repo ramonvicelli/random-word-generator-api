@@ -2,7 +2,7 @@
 
 const RandomHelper = require('../../../api/domain/helper/random-helper');
 const SIZE_NUMBERS = 2;
-const MAXIMUM_NUMBER = 2;
+const MAXIMUM_NUMBER = 10;
 
 describe('random helper', () => {
   let randomHelper;
@@ -21,7 +21,7 @@ describe('random helper', () => {
     });
 
     it('createNumberRandom should be return 2 numbers', () => {
-      const numbers = randomHelper.createNumberRandom(SIZE_NUMBERS);
+      const numbers = randomHelper.createNumberRandom(SIZE_NUMBERS, MAXIMUM_NUMBER);
       expect(numbers.length).to.be.equal(SIZE_NUMBERS);
     });
 
