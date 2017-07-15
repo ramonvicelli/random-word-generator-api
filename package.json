@@ -1,0 +1,44 @@
+{
+  "name": "random-word-generator-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "gulp coverage",
+    "qa": "gulp eslint",
+    "start": "node start.js",
+    "test-unit": "gulp api-test-unit",
+    "test-e2e": "gulp api-test-e2e"
+  },
+  "author": "Ramon Vicelli Machado <ramonvicelli@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "^1.7.0",
+    "consign": "^0.1.6",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "helmet": "^3.6.1",
+    "morgan": "^1.8.2",
+    "sequelize": "^4.3.2",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "eslint-config-restrict": "^0.1.0",
+    "gulp": "^3.9.1",
+    "gulp-env": "^0.4.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-istanbul": "^1.1.2",
+    "gulp-mocha": "^4.3.1",
+    "http-status-codes": "^1.1.6",
+    "mockery": "^2.1.0",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.0.0",
+    "supertest": "^3.0.0"
+  },
+  "engines": {
+    "node": "6.1.x",
+    "npm": "3.8.x"
+  }
+}

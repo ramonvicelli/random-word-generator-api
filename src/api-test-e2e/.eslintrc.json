@@ -1,0 +1,21 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "restrict",
+    "restrict/chai",
+    "restrict/mocha"
+  ],
+  "globals": {
+    "clone": true,
+    "dottie": true,
+    "mockery": true,
+    "properties": true,
+    "simpleMock": true,
+    "resultFile": true
+  },
+  "rules": {
+    "no-process-exit": "off"
+  }
+}

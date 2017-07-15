@@ -1,0 +1,13 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": "restrict",
+  "globals": {
+
+  },
+  "rules": {
+    "new-cap": ["warn", { "capIsNewExceptionPattern": "^DataType." }],
+    "no-underscore-dangle": "off"
+  }
+}
