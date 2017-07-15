@@ -8,6 +8,7 @@
   },
   "rules": {
     "new-cap": ["warn", { "capIsNewExceptionPattern": "^DataType." }],
+    "no-process-env": "off",
     "no-underscore-dangle": "off"
   }
 }

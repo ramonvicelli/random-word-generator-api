@@ -3,15 +3,13 @@
 const environment = require('../environment');
 const winston = require('winston');
 
-const DEFAULT_SERVER_PORT = 3000;
-
 module.exports = app => {
   const configuration = environment.server;
 
   bootstrap();
 
   function bootstrap() {
-    const port = configuration.porta || DEFAULT_SERVER_PORT;
+    const port = configuration.port;
 
     app.listen(port, () => {
       winston.info('##########################################################');

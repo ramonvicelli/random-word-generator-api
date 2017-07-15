@@ -1,6 +1,6 @@
 'use strict';
 
-const SERVER_PORT = 3000;
+const SERVER_PORT = 4000;
 const JSON_SPACES = 2;
 
 module.exports = {
